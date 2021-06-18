@@ -12,15 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyLulus06"
         android:usesCleartextTraffic="true">
-        <activity android:name=".UbahMatKulActivity"></activity>
-        <activity android:name=".AmbilMatKulActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".UbahMatKulActivity" />
+        <activity android:name=".AmbilMatKulActivity" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
