@@ -43,7 +43,8 @@ class MainActivity : AppCompatActivity() {
                 type = "message/rfc822"
             }
             when(it.itemId){
-                R.id.itemHubungi -> startActivity(Intent.createChooser(sendIntent, "Send Email"));
+                R.id.itemHubungi -> startActivity(Intent.createChooser(sendIntent, "Send Email"))
+                R.id.itemKeluar -> logout()
             }
             drawerLayout.closeDrawer(GravityCompat.START)
             true
@@ -69,5 +70,10 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+    }
+
+    fun logout(){
+        Global.nrp=""
+        startActivity(Intent(this, LoginActivity::class.java))
     }
 }

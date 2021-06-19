@@ -86,9 +86,9 @@ class RegisterActivity : AppCompatActivity() {
             textLayoutCheckPin.error="Masukkan kembali pin dengan benar"
             return false
         }
-        else if(pin.isEmpty()||pin.length>10)
+        else if(pin.isEmpty()||pin.length>8)
         {
-            textLayoutAddNrp.error="Pin tidak boleh kosong dan pin tidak boleh melebihi 10 digit"
+            textLayoutAddNrp.error="Pin tidak boleh kosong dan pin tidak boleh melebihi 8 digit"
             return false
         }
         else{
