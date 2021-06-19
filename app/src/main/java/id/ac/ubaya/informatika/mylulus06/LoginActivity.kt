@@ -14,6 +14,8 @@ import kotlinx.android.synthetic.main.activity_register.*
 import org.json.JSONObject
 
 class LoginActivity : AppCompatActivity() {
+    val NAMA_MHS="NAMAMHS"
+    val TAHUN_MHS="ANGKATAN"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -36,6 +38,8 @@ class LoginActivity : AppCompatActivity() {
 
                             Toast.makeText(this, "Berhasil Login", Toast.LENGTH_SHORT).show()
                             val intent = Intent(this, MainActivity::class.java)
+                            intent.putExtra(NAMA_MHS, objNrp.getString("nama"))
+                            intent.putExtra(TAHUN_MHS, objNrp.getString("angkatan"))
                             startActivity(intent)
                         }
                         else{
