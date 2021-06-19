@@ -32,6 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_bold"
                 android:text="Kode MK"
                 android:textSize="24sp"
                 android:textStyle="bold"
@@ -44,6 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="4dp"
+                android:fontFamily="@font/poppins"
                 android:text="Nama Mata Kuliah"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtKodeTaken" />
@@ -54,6 +56,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins"
                 android:text="0 SKS"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtNamaTaken" />
@@ -64,6 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins"
                 android:text="(Semester Tahun)"
                 app:layout_constraintStart_toEndOf="@+id/txtSksTaken"
                 app:layout_constraintTop_toBottomOf="@+id/txtNamaTaken" />
@@ -74,6 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_bold"
                 android:text="Nisbi"
                 android:textSize="24sp"
                 android:textStyle="bold"
@@ -87,6 +92,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginBottom="12dp"
+                android:fontFamily="@font/poppins"
                 android:text="Ubah"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

@@ -12,7 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins"
         android:text="Ambil Mata Kuliah"
+        android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins"
         android:text="Kode MK"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins"
         android:text="Nama MK"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins"
         android:text="0 SKS"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,6 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
         android:text="Semester"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtSksAmbil" />
@@ -79,6 +85,7 @@
             android:id="@+id/edtTahun"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
             android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -98,6 +105,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins"
         android:text="Nisbi"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtInputTahun" />
@@ -109,6 +117,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
+        android:fontFamily="@font/poppins"
         android:text="Simpan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,12 +135,14 @@
             android:id="@+id/rbGasal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
             android:text="gasal" />
 
         <RadioButton
             android:id="@+id/rbGenap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
             android:text="genap" />
     </RadioGroup>
 

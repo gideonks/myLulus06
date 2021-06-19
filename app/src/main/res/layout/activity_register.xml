@@ -13,7 +13,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_bold"
         android:text="myLulus 1.0"
+        android:textColor="#000000"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -27,6 +29,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins"
         android:text="Daftar Akun"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -51,6 +54,7 @@
             android:id="@+id/textAddNrp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
             android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -72,6 +76,7 @@
             android:id="@+id/textAddPin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
             android:inputType="numberPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -93,6 +98,7 @@
             android:id="@+id/textCheckPin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
             android:inputType="numberPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -112,7 +118,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textAddNama"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -132,6 +139,7 @@
             android:id="@+id/textAddTahun"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
             android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -142,6 +150,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
+        android:fontFamily="@font/poppins"
         android:text="Daftar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
