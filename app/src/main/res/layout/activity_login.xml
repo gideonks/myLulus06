@@ -15,6 +15,7 @@
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/poppins_bold"
         android:text="myLulus 1.0"
+        android:textAppearance="@style/heading1"
         android:textColor="#000000"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,6 +31,7 @@
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/poppins"
         android:text="Cek lulus, pasti lulus."
+        android:textAppearance="@style/subtitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
@@ -54,7 +56,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textAppearance="@style/body" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -77,7 +80,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
-            android:inputType="numberPassword" />
+            android:inputType="numberPassword"
+            android:textAppearance="@style/body" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -89,6 +93,7 @@
         android:layout_marginEnd="24dp"
         android:fontFamily="@font/poppins"
         android:text="MASUK"
+        android:textAppearance="@style/body"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textLayoutPin" />
@@ -103,6 +108,7 @@
         android:layout_marginEnd="24dp"
         android:fontFamily="@font/poppins"
         android:text="DAFTAR"
+        android:textAppearance="@style/body"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonMasuk" />
