@@ -74,6 +74,13 @@ class MainActivity : AppCompatActivity() {
 
     fun logout(){
         Global.nrp=""
-        startActivity(Intent(this, LoginActivity::class.java))
+        val intent = Intent(this, LoginActivity::class.java)
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+        startActivity(intent)
+        finish()
+    }
+
+    override fun onBackPressed() {
+
     }
 }

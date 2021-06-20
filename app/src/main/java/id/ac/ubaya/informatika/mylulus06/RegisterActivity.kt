@@ -95,7 +95,7 @@ class RegisterActivity : AppCompatActivity() {
         }
         else if(pin.isEmpty()||pin.length>8)
         {
-            textLayoutAddNrp.error="Pin tidak boleh kosong dan pin tidak boleh melebihi 8 digit"
+            textLayoutAddPin.error="Pin tidak boleh kosong dan pin tidak boleh melebihi 8 digit"
             return false
         }
         else{

@@ -19,8 +19,6 @@ import org.json.JSONObject
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
-val NAMA_MHS="NAMAMHS"
-val TAHUN_MHS="ANGKATAN"
 
 /**
  * A simple [Fragment] subclass.
@@ -45,8 +43,8 @@ class ProfilFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         textViewNrp.text="NRP: "+ Global.nrp
-        textViewNama.text="Nama: "+ activity!!.intent.getStringExtra(NAMA_MHS)
-        textViewAngkatan.text="Angkatan: "+ activity!!.intent.getStringExtra(TAHUN_MHS)
+        textViewNama.text="Nama: "+ Global.nama_siswa
+        textViewAngkatan.text="Angkatan: "+ Global.tahun_siswa
     }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

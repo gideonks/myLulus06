@@ -1,10 +1,20 @@
 package id.ac.ubaya.informatika.mylulus06
 
+import android.app.AlertDialog
+import android.content.DialogInterface
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.RadioButton
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.android.volley.Request
+import com.android.volley.Response
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
+import kotlinx.android.synthetic.main.activity_ambil_mat_kul.*
 import kotlinx.android.synthetic.main.matkul_card_layout.view.*
 import kotlinx.android.synthetic.main.matkul_taken_card_layout.view.*
 
@@ -60,6 +70,39 @@ class MataKuliahAdapter(val matakuliahs: ArrayList<MataKuliah>):RecyclerView.Ada
                         putExtra(Global.NISBI_MATKUL, matakuliah.nisbi)
                     }
                     context.startActivity(i)
+                }
+                btnDelete.setOnClickListener {
+                    AlertDialog.Builder(context).apply {
+                        setMessage("Batal ambil mata kuliah " + matakuliah.nama + "?")
+                        setPositiveButton("Batal", DialogInterface.OnClickListener { _, _ ->
+                            val queue = Volley.newRequestQueue(context)
+                            val url = "${Global.mainUrl}batal_matkul.php"
+                            val stringRequest = object: StringRequest(
+                                Request.Method.POST,
+                                url,
+                                Response.Listener {
+                                    Log.d("batal_matkul", it)
+                                },
+                                Response.ErrorListener {
+                                    Log.e("batal_matkul", it.toString())
+                                }
+                            )
+                            {
+                                override fun getParams(): MutableMap<String, String> {
+                                    val params = HashMap<String, String>()
+                                    params["nrp"]  = Global.nrp
+                                    params["kode"] = matakuliah.kode
+
+                                    return params
+                                }
+                            }
+                            queue.add(stringRequest)
+                            context.startActivity(Intent(context, MainActivity::class.java))
+                            Toast.makeText(context, "Mata Kuliah ${matakuliah.nama} batal diambil.", Toast.LENGTH_SHORT).show()
+                        })
+                        setNegativeButton("Cancel", null)
+                        create().show()
+                    }
                 }
             }
         }

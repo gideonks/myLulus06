@@ -40,7 +40,7 @@ class MatKulFragment : Fragment() {
         getMatkul()*/
     }
 
-    fun getMatkul(){
+    public fun getMatkul(){
         val queue = Volley.newRequestQueue(activity)
         val url = "${Global.mainUrl}get_matkul.php"
         val stringRequest = object:StringRequest(
@@ -88,6 +88,7 @@ class MatKulFragment : Fragment() {
         }
         queue.add(stringRequest)
     }
+
 
     override fun onResume() {
         mataKuliahs.clear()

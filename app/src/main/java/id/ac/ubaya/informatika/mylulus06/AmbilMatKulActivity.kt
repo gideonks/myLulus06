@@ -30,7 +30,7 @@ class AmbilMatKulActivity : AppCompatActivity() {
             val tahun = txtInputTahun.editText?.text.toString()
             if(tahun.isNotEmpty() && radioGroupSmst.checkedRadioButtonId != -1){
                 val tahunDouble = tahun.toDouble()
-                if(tahunDouble == Math.ceil(tahunDouble)){
+                if(tahunDouble == Math.ceil(tahunDouble) && tahunDouble >= Global.tahun_siswa){
                     val queue = Volley.newRequestQueue(applicationContext)
                     val url = "${Global.mainUrl}ambil_matkul.php"
                     val stringRequest = object: StringRequest(
