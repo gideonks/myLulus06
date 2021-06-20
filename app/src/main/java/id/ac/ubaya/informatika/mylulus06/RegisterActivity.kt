@@ -17,7 +17,7 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         buttonRegister.setOnClickListener {
-            if(checkNrp() && checkPin() && checkNama() && checkTahun()){
+            if(checkTahun()&& checkNrp() && checkPin() && checkNama()){
 
                 val nrp=textAddNrp.text.toString()
                 val pin=textAddPin.text.toString()
@@ -75,8 +75,19 @@ class RegisterActivity : AppCompatActivity() {
         val nrp=textAddNrp.text.toString()
 
         if(nrp.isNotEmpty()&&nrp.length==9){
-            textLayoutAddNrp.error=null
-            return true
+            val tahun=textAddTahun.text.toString()
+            val angkatan=tahun[2]+""+tahun[3]
+            val angkatanNrp=nrp[4]+""+nrp[5]
+
+            if(angkatan.equals(angkatanNrp)){
+                textLayoutAddNrp.error=null
+                return true
+            }
+            else{
+                textLayoutAddNrp.error="NRP dan angkatan tidak sesuai"
+                return false
+            }
+
         }
         else{
             textLayoutAddNrp.error="Mohon masukkan NRP yang valid"
