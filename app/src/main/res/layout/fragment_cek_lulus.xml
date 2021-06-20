@@ -14,6 +14,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Cek Kelulusan"
+        android:textAppearance="@style/heading1"
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -29,6 +30,7 @@
         android:layout_marginTop="24dp"
         android:fontFamily="@font/poppins"
         android:text="IPK: .../..."
+        android:textAppearance="@style/body"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -40,6 +42,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/poppins"
         android:text="Total SKS: .../..."
+        android:textAppearance="@style/body"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtIpk" />
 
@@ -51,6 +54,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/poppins"
         android:text="Total SKS nilai D: .../..."
+        android:textAppearance="@style/body"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTotalSks" />
 
@@ -61,6 +65,7 @@
         android:layout_marginTop="72dp"
         android:fontFamily="@font/poppins"
         android:text="LULUS/TIDAK"
+        android:textAppearance="@style/body"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

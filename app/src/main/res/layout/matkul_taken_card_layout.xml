@@ -34,6 +34,7 @@
                 android:layout_marginTop="12dp"
                 android:fontFamily="@font/poppins_bold"
                 android:text="Kode MK"
+                android:textAppearance="@style/heading1"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -47,6 +48,7 @@
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/poppins"
                 android:text="Nama Mata Kuliah"
+                android:textAppearance="@style/body"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtKodeTaken" />
 
@@ -58,6 +60,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/poppins"
                 android:text="0 SKS"
+                android:textAppearance="@style/body"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtNamaTaken" />
 
@@ -69,6 +72,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/poppins"
                 android:text="(Semester Tahun)"
+                android:textAppearance="@style/body"
                 app:layout_constraintStart_toEndOf="@+id/txtSksTaken"
                 app:layout_constraintTop_toBottomOf="@+id/txtNamaTaken" />
 
@@ -80,6 +84,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/poppins_bold"
                 android:text="Nisbi"
+                android:textAppearance="@style/heading1"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -94,6 +99,7 @@
                 android:layout_marginBottom="12dp"
                 android:fontFamily="@font/poppins"
                 android:text="Ubah"
+                android:textAppearance="@style/body"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtSksTaken" />
