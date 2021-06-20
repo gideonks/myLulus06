@@ -9,6 +9,7 @@ import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import kotlinx.android.synthetic.main.activity_register.*
+import org.json.JSONObject
 
 class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,8 +29,14 @@ class RegisterActivity : AppCompatActivity() {
                 var stringRequest= object: StringRequest(
                     Request.Method.POST, url, Response.Listener<String>{
                         Log.d("cekparams", it)
-                        Toast.makeText(this, "Mahasiswa berhasil didaftarkan", Toast.LENGTH_SHORT).show()
-                        finish()
+                        val obj = JSONObject(it)
+                        if(obj.getString("result") == "OK"){
+                            Toast.makeText(this, "Mahasiswa berhasil didaftarkan", Toast.LENGTH_SHORT).show()
+                            finish()
+                        }
+                        else{
+                            Toast.makeText(this, "Gagal memasukkan. NRP sudah ada", Toast.LENGTH_SHORT).show()
+                        }
                     }, Response.ErrorListener {
                         Log.d("cekparams", it.message.toString())
                     })
