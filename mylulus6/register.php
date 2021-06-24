@@ -12,10 +12,9 @@ $nrp=$_POST["nrp"];
 $pin=$_POST["pin"];
 $nama=$_POST["nama"];
 $angkatan=$_POST["angkatan"];
-$result=$c-> query($sql);
 
-$sqlCheck="SELECT * FROM mahasiswa WHERE nrp='$nrp'";
-$result=$c-> query($sqlCheck);
+$sql="SELECT * FROM mahasiswa WHERE nrp='$nrp'";
+$result=$c-> query($sql);
 
 if($result->num_rows>0){
 	echo json_encode(array('result'=>'error'));
